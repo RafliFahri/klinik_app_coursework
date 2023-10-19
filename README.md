@@ -1,3 +1,5 @@
 # klinik_app
 
-A new Flutter project.
+A Flutter project I wrote from my Mobile Programming Course
+
+All main file are in the lib directory
