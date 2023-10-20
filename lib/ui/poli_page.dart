@@ -17,7 +17,7 @@ class _PoliPageState extends State<PoliPage> {
       body: ListView(
         children: [
           GestureDetector(
-            child: Card(
+            child: const Card(
               child: ListTile(
                 title: const Text("Poli Anak"),
               ),
@@ -30,20 +30,47 @@ class _PoliPageState extends State<PoliPage> {
               );
             },
           ),
-          Card(
-            child: ListTile(
-              title: const Text("Poli Kandungan"),
+          GestureDetector(
+            child: const Card(
+              child: ListTile(
+                title: const Text("Poli Kandungan"),
+              ),
             ),
+            onTap: () {
+              Poli poliKandungan = new Poli(namaPoli: "Poli Kandungan");
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => PoliDetail(poli: poliKandungan)));
+            },
           ),
-          Card(
-            child: ListTile(
-              title: const Text("Poli Gigi"),
+          GestureDetector(
+            child: const Card(
+              child: ListTile(
+                title: const Text("Poli Gigi"),
+              ),
             ),
+            onTap: () {
+              Poli poliGigi = new Poli(namaPoli: "Poli Gigi");
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => PoliDetail(poli: poliGigi)));
+            },
           ),
-          Card(
-            child: ListTile(
-              title: const Text("Poli THT"),
+          GestureDetector(
+            child: const Card(
+              child: ListTile(
+                title: const Text("Poli THT"),
+              ),
             ),
+            onTap: () {
+              Poli poliTHT = new Poli(namaPoli: "Poli THT");
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => PoliDetail(poli: poliTHT)));
+            },
           )
         ],
       ),
