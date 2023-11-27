@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-import '/ui/poli_page.dart';
+// import 'P5/ui/poli_page.dart';
+// import 'P6/ui/poli_page.dart';
+// import 'P7/ui/poli_page.dart';
+import 'P9/ui/poli_page.dart';
+import 'P6T/pegawai_page.dart';
 
 void main() {
   runApp(const MainApp());
@@ -13,6 +17,7 @@ class MainApp extends StatelessWidget {
     return const MaterialApp(
       title: "Klinik APP",
       home: PoliPage(),
+      // home: PegawaiPage(),
     );
   }
 }
