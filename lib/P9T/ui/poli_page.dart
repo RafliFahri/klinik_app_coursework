@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import './poli_form.dart';
 import './poli_item.dart';
-import './poli_detail.dart';
 import '../model/poli.dart';
 import '../widget/sidebar.dart';
 
